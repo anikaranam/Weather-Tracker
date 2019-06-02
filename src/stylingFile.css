@@ -1,0 +1,23 @@
+.centering {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  border-radius: 5%;
+  height: 200px;
+}
+
+.centerTextBox {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5%;	
+}
+
+.center2 {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 50%;
+}
