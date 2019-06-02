@@ -53,7 +53,7 @@ import "./stylingFile.css";
       }
 
       getTemp() {
-        //return (this.state.weatherData.current.temp_c)
+        
         if (this.state.weatherData.current == undefined) {
           return 0
         } else {
@@ -62,28 +62,28 @@ import "./stylingFile.css";
       }
 
       getHumidity() {
-        //return (this.state.weatherData.current.temp_c)
+        
         if (this.state.weatherData.current == undefined) {
           alert('place does not exist')
           return 0
         } else {
           return (this.state.weatherData.current.humidity)
         }
+
       }
 
       getWindSpeed() {
-        //return (this.state.weatherData.current.temp_c)
+    
         if (this.state.weatherData.current == undefined) {
           return 0
         } else {
           return (this.state.weatherData.current.wind_kph)
         }
+
       }
 
       render () {
         return (
-          //<Contacts weather={this.state.weather} />
-          //<div><h1>Hello</h1>{this.getYear()}</div>
           <div style={styling}>
             <div>
               <h1 style={{textAlign: "center"}}> Weather </h1>
