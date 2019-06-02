@@ -5,15 +5,13 @@ import "./stylingFile.css";
         backgroundColor: "orange"
     }
 
-    const styling2 = {
-      margin: "0 auto"
-    }
-
     class App extends React.Component {
       constructor(props) {
         super(props)
         
         this.state = {
+
+          // Object to store parsed JSON
 
           weatherData: {
 
@@ -27,6 +25,7 @@ import "./stylingFile.css";
           }
         }
 
+        // Event Handler for submit button
         this.clickHandle = this.clickHandle.bind(this)
       }
 
@@ -47,13 +46,8 @@ import "./stylingFile.css";
 
       }
 
-
-      getYear() {
-        return (<div>{this.state.weatherData.location.name}</div>)
-      }
-
       getTemp() {
-        
+        // return temperature
         if (this.state.weatherData.current == undefined) {
           return 0
         } else {
@@ -62,7 +56,7 @@ import "./stylingFile.css";
       }
 
       getHumidity() {
-        
+        // return humidity
         if (this.state.weatherData.current == undefined) {
           alert('place does not exist')
           return 0
@@ -73,7 +67,7 @@ import "./stylingFile.css";
       }
 
       getWindSpeed() {
-    
+        // return wind speed
         if (this.state.weatherData.current == undefined) {
           return 0
         } else {
@@ -106,31 +100,6 @@ import "./stylingFile.css";
         )
       }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     export default App;
 
